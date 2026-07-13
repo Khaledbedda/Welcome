@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaled Bedda - Data Scientist & AI Engineer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Khaled Bedda - Data Scientist & AI/ML Engineer</title>
     <style>
         * {
             margin: 0;
@@ -14,8 +13,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #ffffff 0%, #eaf2ff 100%);
+            color: #1e293b;
             overflow-x: hidden;
         }
 
@@ -30,14 +29,16 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(37, 99, 235, 0.08);
             z-index: 1000;
             transition: all 0.3s ease;
         }
 
         nav.scrolled {
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(37, 99, 235, 0.15);
         }
 
         nav .container {
@@ -50,7 +51,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #64ffda;
+            color: #2563eb;
         }
 
         .nav-links {
@@ -60,14 +61,14 @@
         }
 
         .nav-links a {
-            color: white;
+            color: #1e293b;
             text-decoration: none;
             transition: color 0.3s ease;
             cursor: pointer;
         }
 
         .nav-links a:hover {
-            color: #64ffda;
+            color: #2563eb;
         }
 
         /* Hero Section */
@@ -94,7 +95,7 @@
 
         .hero .subtitle {
             font-size: 1.5rem;
-            color: #64ffda;
+            color: #2563eb;
             margin-bottom: 1rem;
             opacity: 0;
             transform: translateY(30px);
@@ -129,43 +130,24 @@
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #64ffda, #4facfe);
-            color: #333;
+            background: linear-gradient(45deg, #2563eb, #60a5fa);
+            color: white;
         }
 
         .btn-secondary {
             background: transparent;
-            color: white;
-            border: 2px solid #64ffda;
+            color: #2563eb;
+            border: 2px solid #2563eb;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
         }
 
         .btn-primary:hover {
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.4);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
         }
-
-        /* Floating elements */
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .floating-element {
-            position: absolute;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-        .floating-element:nth-child(2) { top: 20%; right: 10%; animation-delay: 1s; }
-        .floating-element:nth-child(3) { bottom: 10%; left: 20%; animation-delay: 2s; }
-        .floating-element:nth-child(4) { bottom: 20%; right: 20%; animation-delay: 3s; }
 
         /* Sections */
         section {
@@ -177,12 +159,12 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: #64ffda;
+            color: #2563eb;
         }
 
         /* About Section */
         .about {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(37, 99, 235, 0.04);
         }
 
         .about-content {
@@ -208,7 +190,8 @@
         .stat {
             text-align: center;
             padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(37, 99, 235, 0.07);
+            border: 1px solid rgba(37, 99, 235, 0.15);
             border-radius: 10px;
             backdrop-filter: blur(10px);
         }
@@ -216,18 +199,18 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #64ffda;
+            color: #2563eb;
             display: block;
         }
 
         .stat-label {
             font-size: 0.9rem;
-            opacity: 0.8;
+            color: rgba(30, 41, 59, 0.7);
         }
 
         /* Skills Section */
         .skills {
-            background: linear-gradient(45deg, rgba(100, 255, 218, 0.1), rgba(79, 172, 254, 0.1));
+            background: linear-gradient(45deg, rgba(37, 99, 235, 0.05), rgba(96, 165, 250, 0.08));
         }
 
         .skills-grid {
@@ -237,10 +220,11 @@
         }
 
         .skill-category {
-            background: rgba(255, 255, 255, 0.1);
+            background: #ffffff;
             padding: 2rem;
             border-radius: 15px;
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.12);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.06);
             transition: transform 0.3s ease;
         }
 
@@ -249,7 +233,7 @@
         }
 
         .skill-category h3 {
-            color: #64ffda;
+            color: #2563eb;
             margin-bottom: 1rem;
         }
 
@@ -260,16 +244,17 @@
         }
 
         .skill-tag {
-            background: rgba(100, 255, 218, 0.2);
+            background: rgba(37, 99, 235, 0.08);
+            color: #1d4ed8;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
-            border: 1px solid rgba(100, 255, 218, 0.3);
+            border: 1px solid rgba(37, 99, 235, 0.25);
         }
 
         /* Experience Section */
         .experience {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(37, 99, 235, 0.03);
         }
 
         .timeline {
@@ -285,7 +270,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: #64ffda;
+            background: #2563eb;
             transform: translateX(-50%);
         }
 
@@ -295,10 +280,11 @@
         }
 
         .timeline-content {
-            background: rgba(255, 255, 255, 0.1);
+            background: #ffffff;
             padding: 2rem;
             border-radius: 15px;
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.12);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.06);
             width: 45%;
             position: relative;
         }
@@ -314,30 +300,31 @@
             top: 2rem;
             width: 15px;
             height: 15px;
-            background: #64ffda;
+            background: #2563eb;
             border-radius: 50%;
             transform: translateX(-50%);
         }
 
         .timeline-content h3 {
-            color: #64ffda;
+            color: #2563eb;
             margin-bottom: 0.5rem;
         }
 
         .timeline-content .company {
             font-weight: bold;
+            color: #1e293b;
             margin-bottom: 0.5rem;
         }
 
         .timeline-content .date {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(30, 41, 59, 0.6);
             font-size: 0.9rem;
             margin-bottom: 1rem;
         }
 
         /* Projects Section */
         .projects {
-            background: linear-gradient(45deg, rgba(118, 75, 162, 0.1), rgba(102, 126, 234, 0.1));
+            background: linear-gradient(45deg, rgba(37, 99, 235, 0.05), rgba(96, 165, 250, 0.08));
         }
 
         .projects-grid {
@@ -347,27 +334,31 @@
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: #ffffff;
             border-radius: 15px;
             overflow: hidden;
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.12);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.06);
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.18);
         }
 
         .project-image {
-            height: 200px;
-            background: linear-gradient(45deg, #64ffda, #4facfe);
+            height: 90px;
+            background: linear-gradient(45deg, #2563eb, #60a5fa);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-            color: #333;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
         }
 
         .project-content {
@@ -375,7 +366,7 @@
         }
 
         .project-content h3 {
-            color: #64ffda;
+            color: #2563eb;
             margin-bottom: 0.5rem;
         }
 
@@ -387,11 +378,12 @@
         }
 
         .tech-tag {
-            background: rgba(100, 255, 218, 0.2);
+            background: rgba(37, 99, 235, 0.08);
+            color: #1d4ed8;
             padding: 0.3rem 0.8rem;
             border-radius: 15px;
             font-size: 0.8rem;
-            border: 1px solid rgba(100, 255, 218, 0.3);
+            border: 1px solid rgba(37, 99, 235, 0.25);
         }
 
         .project-links {
@@ -401,19 +393,20 @@
         }
 
         .project-links a {
-            color: #64ffda;
+            color: #2563eb;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
         .project-links a:hover {
-            color: white;
+            color: #1d4ed8;
         }
 
         /* Contact Section */
         .contact {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(37, 99, 235, 0.04);
         }
 
         .contact-content {
@@ -433,19 +426,20 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: white;
+            color: #1e293b;
             text-decoration: none;
             font-size: 1.1rem;
             transition: color 0.3s ease;
         }
 
         .contact-link:hover {
-            color: #64ffda;
+            color: #2563eb;
         }
 
         /* Footer */
         footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: #1d4ed8;
+            color: white;
             text-align: center;
             padding: 2rem 0;
         }
@@ -456,11 +450,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
         }
 
         /* Mobile Responsive */
@@ -519,17 +508,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="floating-elements">
-            <div class="floating-element">🤖</div>
-            <div class="floating-element">📊</div>
-            <div class="floating-element">🔬</div>
-            <div class="floating-element">💡</div>
-        </div>
         <div class="container">
             <div class="hero-content">
                 <h1>Khaled Bedda</h1>
-                <div class="subtitle">Data Scientist & AI Engineer</div>
-                <p>Transforming complex data into actionable insights and building intelligent systems that drive innovation. Specializing in distributed AI, federated learning, and MLOps.</p>
+                <div class="subtitle">Data Scientist & AI/ML Engineer</div>
+                <p>Building production LLM systems and agentic AI architectures that turn complex data into real-time, actionable insight. Grounded in a research background in distributed and federated learning, now focused on shipping ML and GenAI systems that hold up in production.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -544,26 +527,26 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Data Scientist and AI Engineer with 3+ years of experience developing and deploying machine learning solutions across healthcare, government, and industrial IoT sectors.</p>
-                    <p>My expertise spans from research-based distributed AI systems to production-ready MLOps pipelines. I thrive on bridging the gap between cutting-edge AI research and real-world business applications.</p>
-                    <p>Currently leading AI initiatives at Rivercity Innovations, where I develop temperature anomaly detection systems for cold-chain monitoring, directly impacting enterprise operations and efficiency.</p>
+                    <p>I'm a Data Scientist and AI/ML Engineer with 3+ years of experience developing and deploying machine learning and LLM-based systems across healthcare, government, and industrial IoT sectors.</p>
+                    <p>My expertise spans from research-based distributed AI systems to production-ready agentic architectures and MLOps pipelines. I thrive on bridging the gap between cutting-edge AI research and real-world business applications.</p>
+                    <p>Currently leading AI initiatives at Rivercity Innovations, where I architect production multi-agent AI systems — combining open-source and commercial LLMs with real-time anomaly detection and predictive analytics — for enterprise IoT monitoring.</p>
                 </div>
                 <div class="stats">
                     <div class="stat">
-                        <span class="stat-number">5</span>
+                        <span class="stat-number">4</span>
                         <span class="stat-label">Published Papers</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">280+</span>
-                        <span class="stat-label">People Trained</span>
+                        <span class="stat-number">230+</span>
+                        <span class="stat-label">Professionals Presented To</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">40%</span>
-                        <span class="stat-label">Improved Accuracy</span>
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years of Experience</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">$200K+</span>
-                        <span class="stat-label">Funding Secured</span>
+                        <span class="stat-number">M.Sc.</span>
+                        <span class="stat-label">AI Specialization</span>
                     </div>
                 </div>
             </div>
@@ -576,7 +559,18 @@
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <h3>Agentic AI & LLM Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">vLLM</span>
+                        <span class="skill-tag">LiteLLM</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">Vanna</span>
+                        <span class="skill-tag">Ollama</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">TensorFlow</span>
                         <span class="skill-tag">PyTorch</span>
@@ -586,7 +580,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <h3>Programming</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">R</span>
@@ -596,22 +590,22 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & MLOps</h3>
+                    <h3>Cloud & MLOps</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Azure</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">MLflow</span>
-                        <span class="skill-tag">Kubeflow</span>
+                        <span class="skill-tag">PostgreSQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Data & Visualization</h3>
+                    <h3>Data & Visualization</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
                         <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">PowerBI</span>
+                        <span class="skill-tag">Power BI</span>
                         <span class="skill-tag">SQL</span>
                     </div>
                 </div>
@@ -629,7 +623,7 @@
                         <h3>Data Scientist</h3>
                         <div class="company">Rivercity Innovations</div>
                         <div class="date">May 2025 - Present</div>
-                        <p>Leading AI initiatives for cold-chain monitoring systems. Developed temperature anomaly detection framework reducing false alerts by 40%.</p>
+                        <p>Architecting a production multi-agent conversational AI system (LangGraph) combining self-hosted open-source LLMs (vLLM) and commercial LLM APIs to deliver natural-language analytics over structured and unstructured operational data. Built a hybrid RAG and Text-to-SQL pipeline, and develop traditional ML and deep learning models for anomaly detection and forecasting.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -637,7 +631,7 @@
                         <h3>AI Tools & Infrastructure Engineer</h3>
                         <div class="company">Canada Revenue Agency</div>
                         <div class="date">Aug 2023 - Mar 2025</div>
-                        <p>Provided technical leadership for infrastructure supporting 1,000+ analysts. Led AI governance framework development.</p>
+                        <p>Contributed to the Agency's internal generative AI frameworks and LLM tooling, helped establish AI deployment guidelines, and provided technical infrastructure support across ArcGIS, QGIS, and MSSQL environments. Presented AI concepts to 230+ non-technical stakeholders.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -645,7 +639,7 @@
                         <h3>Graduate Research Assistant</h3>
                         <div class="company">Thunder Bay Regional Health Research Institute</div>
                         <div class="date">Sep 2021 - Jan 2023</div>
-                        <p>Conducted research on Distributed AI for 5G Networks. Published 3 first-author papers in IEEE conferences.</p>
+                        <p>Conducted research on Distributed AI for 5G Networks. Applied federated learning to distributed, resource-constrained edge systems. Published 3 first-author papers in IEEE conferences and journals.</p>
                     </div>
                 </div>
             </div>
@@ -658,64 +652,52 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">🚗</div>
+                    <div class="project-image">Agentic AI</div>
                     <div class="project-content">
-                        <h3>Autonomous Vehicle System</h3>
-                        <p>Real-time lane detection and object recognition using ESP32, Flask, and OpenCV. Achieved 85% accuracy in controlled environments.</p>
+                        <h3>Production Multi-Agent AI Assistant</h3>
+                        <p>Enterprise conversational AI system combining RAG and Text-to-SQL pipelines with open-source (vLLM) and commercial LLMs, giving users natural-language access to real-time operational data.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">ESP32</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://youtu.be/ORGaofgqxUc" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">vLLM</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">LiteLLM</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🧠</div>
+                    <div class="project-image">Deep Learning</div>
                     <div class="project-content">
                         <h3>EEG Classification with VAE</h3>
-                        <p>Developed generative models to address data imbalance, improving classification accuracy from 78% to 89% on medical datasets.</p>
+                        <p>Developed generative models to address data imbalance in EEG abnormality classification using a VAE-based data augmentation technique.</p>
                         <div class="project-tech">
                             <span class="tech-tag">VAE</span>
                             <span class="tech-tag">TensorFlow</span>
                             <span class="tech-tag">Medical AI</span>
                             <span class="tech-tag">Python</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🌡️</div>
+                    <div class="project-image">Medical Imaging</div>
                     <div class="project-content">
-                        <h3>Motor Temperature Prediction</h3>
-                        <p>Comprehensive ML pipeline comparing regression, tree-based, and RNN models, achieving 92% accuracy and reducing maintenance costs by 15%.</p>
+                        <h3>Brain Tumor Segmentation</h3>
+                        <p>3D U-Net model with hyperparameter optimization for brain tumor segmentation on MRI imaging data. Graduation project, awarded Distinction.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Time Series</span>
-                            <span class="tech-tag">RNN</span>
-                            <span class="tech-tag">Industrial AI</span>
+                            <span class="tech-tag">3D U-Net</span>
+                            <span class="tech-tag">MRI</span>
+                            <span class="tech-tag">Medical AI</span>
                             <span class="tech-tag">Python</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">📡</div>
+                    <div class="project-image">Research</div>
                     <div class="project-content">
-                        <h3>Federated Learning for 5G</h3>
-                        <p>Research on peer-coordinated sequential split learning for intelligent traffic analysis in mmWave 5G networks.</p>
+                        <h3>Federated Learning for 5G & UAV-IoT</h3>
+                        <p>Research on peer-coordinated sequential split learning for intelligent traffic analysis in mmWave 5G networks, and communication-efficient federated learning for UAV-IoT systems.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Federated Learning</span>
                             <span class="tech-tag">5G Networks</span>
@@ -723,8 +705,21 @@
                             <span class="tech-tag">Research</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://ieeexplore.ieee.org/document/10293872" target="_blank"><i class="fas fa-file-alt"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://ieeexplore.ieee.org/document/10293872" target="_blank">Read Paper &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">Time Series</div>
+                    <div class="project-content">
+                        <h3>Motor Temperature Prediction</h3>
+                        <p>Comparative ML pipeline evaluating regression-based, tree-based, and RNN-based models for permanent magnet synchronous motor temperature prediction.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Time Series</span>
+                            <span class="tech-tag">RNN</span>
+                            <span class="tech-tag">Industrial AI</span>
+                            <span class="tech-tag">Python</span>
                         </div>
                     </div>
                 </div>
@@ -740,19 +735,15 @@
                 <p>I'm always interested in discussing AI/ML innovations, research collaborations, and exciting opportunities. Feel free to reach out!</p>
                 <div class="contact-links">
                     <a href="mailto:khaledbedda12@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>khaledbedda12@gmail.com</span>
+                        <span>Email: khaledbedda12@gmail.com</span>
                     </a>
                     <a href="tel:+18073587144" class="contact-link">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 807-358-7144</span>
+                        <span>Phone: +1 807-358-7144</span>
                     </a>
-                    <a href="https://linkedin.com/in/khaled-bedda" target="_blank" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/khaled-bedda-89693213b" target="_blank" class="contact-link">
                         <span>LinkedIn</span>
                     </a>
                     <a href="https://github.com/khaledbedda" target="_blank" class="contact-link">
-                        <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
                 </div>
@@ -763,7 +754,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Khaled Bedda. Crafted with passion and precision.</p>
+            <p>&copy; 2026 Khaled Bedda. Crafted with passion and precision.</p>
         </div>
     </footer>
 
@@ -832,6 +823,7 @@
             counters.forEach(counter => {
                 const target = counter.textContent;
                 const numericTarget = parseInt(target.replace(/\D/g, ''));
+                if (isNaN(numericTarget)) { return; }
                 let current = 0;
                 const increment = numericTarget / 100;
                 const timer = setInterval(() => {
@@ -862,7 +854,7 @@
             statsObserver.observe(statsSection);
         }
 
-        // Typing effect for subtitle (optional enhancement)
+        // Typing effect for subtitle
         const subtitle = document.querySelector('.hero .subtitle');
         const originalText = subtitle.textContent;
         subtitle.textContent = '';
@@ -875,3 +867,7 @@
                 setTimeout(typeWriter, 100);
             }
         };
+        typeWriter();
+    </script>
+</body>
+</html>
